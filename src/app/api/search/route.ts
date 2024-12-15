@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import ClothingMatcher from "../../lib/aiMatching";
-import { fetchProductsFromEcommerceSites } from "../../lib/ecommerceFetcher";
+import ClothingMatcher from "../../../lib/aiMatching";
+import { fetchProductsFromEcommerceSites } from "../../../lib/ecommerceFetcher";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== "POST") {
